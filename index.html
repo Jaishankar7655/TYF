@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/src/assets/images/logo.png" />
-    <title>Truba institute of sceince and technology bhopal </title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Icons  -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- TRUBA  -->
+  <link rel="icon" type="image/x-icon" href="images/truba logo.jpg">
+
+  <!-- Stylesheet Link  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="stylesheets/style.css" />
+
+  <title>TYF</title>
+</head>
+
+<body>
+
+  <!-- Logo and Navbar  -->
+  <header class="header">
+    <a href="#" class="logo">TIEIT</a>
+    <i class='bx bx-menu' onclick="Toggle()" id="menu-icon"></i>
+    <nav class="navbar" id="nav">
+      <a href="index.html">Home</a>
+      <a href="event.html" class="nav-btn" id="event-btn">Event</a>
+      <a href="Team.html">Team</a>
+      <a href="#footer">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Section  -->
+  <section class="home" id="home">
+    <div class="home-content" data-aos="fade-right">
+      <h3  style="color: #ea7515; font-size: 140px;">TIEIT</h3>
+      <h1 class="text" data-fill-text="TYF 2K25" style="font-size: 140px;" >TYF <span style="color: #ea7515;  font-size: 140px;">2K25</span></h1>
+      <h3  style="color: #ea7515; font-size: 70px;">TRUBA YOUTH FEST</h3>
+
+      <!-- Social Media  -->
+      <div class="social-media">
+        <a href="https://www.instagram.com/trubagroup/?hl=en" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.linkedin.com/school/truba-group-of-institutes-bhopal/posts/?feedView=all" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://www.youtube.com/@incredibletruba8747" target="_blank"><i class='bx bxl-youtube'></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class='bx bxl-twitter'></i></a>
+        
+      </div>
+        <div>
+          <a href="https://trubafest.netlify.app/register" target="_blank"><button class="glow-on-hover" type="button">Register Now</button></a>
+        </div>
+    </div>
+
+    <!-- logo  -->
+    <div class="home-img" data-aos="fade-left">
+      <img src="images/truba2.jpg" alt="logo" class="logo-image" />
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 750,
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+</body>
+
 </html>
