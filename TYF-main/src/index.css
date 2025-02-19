@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Add this to your global CSS file */
+@media print {
+    .no-print {
+      display: none;
+    }
+    .invoice{
+      display: block !important;
+    }
+    
+    .customer{
+      background-color: gray !important;
+    }
+  
+  }
+
+.invoice{
+  display: none;
+}
+
+  
+/* Hide spinners for Chrome, Edge, and Safari */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide spinners for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox uses -moz-appearance */
+}
